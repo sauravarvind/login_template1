@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/x-icon" href="images/lock.jpg">
+<title>Login</title>
+<!----links--------->
+
+<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="./main.js"></script> 
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+   <script src="./main.js"></script>
+
+<!-------links------->
+
+</head>
+<body style="align-items: center;">
+
+  <!---- style for form---->
+
+  <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=text]:hover , input[type=password]:hover {
+  border-color: #aaa;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+
+<!--- style for form completed--->
+<div class="col-md-12" style="left:410px; top:60px;">
+<div class="card" style="width: 500px; border-radius: 10px;">
+<form  id="form_id" method="post" name="myform" style="padding:50px;">
+  <div class="container">
+<div>
+  <h3 class="text-center" style="padding-left: 20px; padding-bottom: 10px; font-weight:5px;">Login to continue</h3>
+</div> 
+    <div style="padding-bottom:20px;"></div>
+     <label for="uname"><b>Username</b></label>
+    <div class="row">
+      <div class="col-md-2">
+        <i class="fas fa-user-tie" style="font-size: 50px; padding-top:5px;"></i>
+      </div>
+      <div class="col-md-10">
+    <input type="text" name="username" id="username" placeholder="Enter Username" required>
+    </div>
+</div>
+
+<label for="psw" style="padding-top: 9px;"><b>Password</b></label>
+<div class="row">
+<div class="col-md-2">
+        <i class="fas fa-key" style="font-size: 50px; padding-top:5px;"></i>
+      </div>
+<div class="col-md-10">
+    <input type="password" name="password" id="password" placeholder="Enter Password" required>
+</div>
+</div>
+    <div class="text-center" style="padding-top: 25px;">
+    <input type="submit" value="login" id="submit" onclick="validate()" class="btn btn-primary" style="width:250px;"/>
+    </div>
+    <br>
+
+    <div class="text-center row" style="padding-top: 10px;">
+      <div class="col">
+    <div>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </div>
+    </div>
+     <div class="col">
+    <span class="psw"> <a href="#">Forgot password?</a></span>
+  </div>
+</div>
+  </div>
+  </div>
+</form>
+</div>
+</div>
+ <div class="text-center" style="padding-top:100px;">
+    <p>This template is made my <a href="https://www.linkedin.com/in/saurav-arvind/"><span style="color: black;">Saurav Arvind P</span></a></p>
+  </div>
+
+
+</body>
+ 
+</html>
